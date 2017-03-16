@@ -1,0 +1,60 @@
+@import "normalize";
+@import "layout";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "services";
+@import "dolore";
+@import "work";
+@import "footer";
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: $font-primary;
+  color: $color-primary;
+  font-size: 14px;
+}
+
+.ba-underline{
+  width: 86px;
+  height: 2px;
+  margin: 0 auto;
+  background: $color-primary;
+  border: 0;
+  &--dark{
+    background: $color-primary--dark;
+  }
+}
+
+
+.ba-box{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.ba-section{
+
+  &__header{
+    text-align: center;
+    margin-bottom: 58px;
+  }
+  &__title{
+    font-family: $font-header;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
