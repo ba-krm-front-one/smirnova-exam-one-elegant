@@ -1,0 +1,112 @@
+.ba-header {
+  background: #000 url("../../images/hero-bg.jpg") 50% no-repeat;
+  min-height: 900px;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0 47px;
+
+  &-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  &__logo{
+    width: 109px;
+    height: 18px;
+    flex-shrink: 0;
+
+  }
+  &__menu {
+    padding-right: 70px;
+  }
+
+  &__info {
+    text-align: center;
+    padding: 215px 0;
+    margin: 0 auto;
+  }
+
+  &__title {
+
+    h1{
+      font-family: $font-header;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60px;
+      text-transform: uppercase;
+      margin: 0 0 40px;
+    }
+
+  }
+
+  p{
+    margin-top: 40px;
+    color: #fffefe;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+
+  }
+  &__scroll{
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover{
+      box-shadow: 0 0 10px rgba(255,255,255, .5);
+      transform: translateX(-50%);
+    }
+  }
+  &__arrow-link{
+    display: block;
+    width: 92px;
+    height: 92px;
+    background: url("../../images/button.svg") 50% no-repeat;
+  }
+}
+
+
+.ba-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+
+  &__item {
+    margin-left: 50px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 0.025em;
+    position: relative;
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $color-primary;
+      transform: translateY(-12px);
+      visibility: hidden;
+      opacity: 0.9;
+    }
+    &:hover:before {
+      visibility: visible;
+      transform: translateY(0);
+      transition: transform .2s ease-in, opacity .2s ease-in;
+      opacity: 0.3;
+    }
+  }
+  &__link{
+    color: #fffefe;
+  }
+}
+
+
+

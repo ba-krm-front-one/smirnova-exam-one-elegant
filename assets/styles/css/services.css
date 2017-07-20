@@ -1,0 +1,14 @@
+.ba-services {
+  padding-bottom: 115px;
+  padding-top: 115px;
+  color: #222222; }
+  .ba-services__info {
+    margin: 0 auto; }
+  .ba-services__title {
+    color: #222222;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0; }

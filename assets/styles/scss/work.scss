@@ -1,0 +1,80 @@
+@import "variables";
+
+.ba-work{
+  color: $color-primary--dark;
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: 90px;
+    overflow: hidden;
+  }
+
+  &__example {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    position: relative;
+  }
+
+  &__example-hover-bg{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0, .75);
+    display: flex;
+    max-height: 420px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    visibility: hidden;
+  }
+
+  &__example-title{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $color-primary;
+
+
+    &:after{
+    display: block;
+    content: url("../../images/link-img.svg");
+    width: 41px;
+    height: 41px;
+    margin: 25px auto 0;
+   }
+  }
+  &__example:hover{
+
+    .ba-work__example-hover-bg{
+      visibility: visible;
+    }
+
+  }
+
+  &__more{
+    display: block;
+    max-width: 370px;
+    height: 60px;
+    margin: 65px auto 0;
+    border: 3px solid $color-primary--dark;
+    color: $color-primary--dark;
+    font-size: 24px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover{
+      background: $color-primary--dark;
+      color: $color-primary;
+    }
+  }
+}

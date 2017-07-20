@@ -1,0 +1,50 @@
+@import "variables";
+
+.ba-services{
+  padding: 100px 0 95px;
+  color: $color-primary--dark;
+
+  &__content{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: -30px;
+    flex-wrap: wrap;
+
+  }
+}
+
+.ba-service{
+
+  &__item{
+    text-align: center;
+    width: 370px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__space-for-image{
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  &__title{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 34px 0 30px;
+    letter-spacing: 0.01em;
+  }
+
+  &__info{
+    font-size: 16px;
+    line-height: 30px;
+    word-wrap: break-word;
+    max-width: 316px;
+    margin: 0 auto;
+  }
+
+}

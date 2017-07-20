@@ -1,0 +1,86 @@
+@import "variables";
+
+
+.ba-box__dolore--flex{
+  display: flex;
+  justify-content: space-between;
+}
+.ba-dolore{
+  background: $color-primary--dark url("../../images/dolore-bg.png") 50% no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  &__info{
+    height: 500px;
+    padding-top: 160px;
+  }
+  &__title{
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.025em;
+    padding-bottom: 5px;
+  }
+
+  &__description{
+    max-width: 516px;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+
+  &__big-image{
+    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 800px){
+  .ba-dolore__big-image{
+    display: none;
+  }
+
+  .ba-dolore__info{
+    padding-top: 30px;
+  }
+}
+.ba-dolore__more-state {
+  display: none;
+}
+
+.ba-dolore__more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.ba-dolore__more-state:checked ~ .ba-dolore__description .ba-dolore__more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.ba-dolore__more-state ~ .ba-dolore__more-trigger:before {
+  content: 'more';
+}
+
+.ba-dolore__more-state:checked ~ .ba-dolore__more-trigger:before {
+  content: 'less';
+}
+
+.ba-dolore__more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  color: $color-primary;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
